@@ -15,7 +15,7 @@ echo "$(get_date) [Step 1/3] Running mongodump"
 mongodump -h $MONGO_HOST -p $MONGO_PORT -u $MONGO_USERNAME -p $MONGO_PASSWORD
 
 echo "$(get_date) [Step 2/3] Creating tar archive"
-tar zcvf $OUT dump/
+tar zcf $OUT dump/
 rm -rf dump/
 
 echo "$(get_date) [Step 3/3] Uploading archive to S3"
