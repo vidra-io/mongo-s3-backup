@@ -9,7 +9,7 @@ You can configure the execution of the above steps by setting the following
 environment variables:
 
 * `MONGO_HOST`
-* `MONGO_PORT`
+* `MONGO_PORT`, optional, defaults to `27017`
 * `AWS_ACCESS_KEY_ID`
 * `AWS_SECRET_ACCESS_KEY`
 * `S3_BUCKET`

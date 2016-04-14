@@ -1,5 +1,4 @@
 FROM mongo
-MAINTAINER Vladimir Makhaev <vmakhaev@gmail.com>
 
 RUN mkdir /script
 ADD . /script
