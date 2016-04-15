@@ -12,7 +12,7 @@ OUT=$BACKUP_FILENAME_PREFIX-$(date +$BACKUP_FILENAME_DATE_FORMAT).tgz
 echo "$(get_date) Mongo backup started"
 
 echo "$(get_date) [Step 1/3] Running mongodump"
-mongodump -h $MONGO_HOST -p $MONGO_PORT -u $MONGO_USERNAME -p $MONGO_PASSWORD
+mongodump -h $MONGO_HOST -p $MONGO_PORT
 
 echo "$(get_date) [Step 2/3] Creating tar archive"
 tar zcf $OUT dump/
