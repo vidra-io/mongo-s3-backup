@@ -3,6 +3,7 @@
 CRON_SCHEDULE=${CRON_SCHEDULE:-0 1 * * *}
 
 CRON_ENVIRONMENT="
+AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION:-}
 AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID:?"env variable is required"}
 AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY:?"env variable is required"}
 MONGO_HOST=${MONGO_HOST:?"env variable is required"}
